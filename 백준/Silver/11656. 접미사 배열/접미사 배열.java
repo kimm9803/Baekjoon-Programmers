@@ -15,8 +15,10 @@ public class Main {
 
         Arrays.sort(arr);
 
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            sb.append(arr[i]).append('\n');
         }
+        System.out.println(sb);
     }
 }
