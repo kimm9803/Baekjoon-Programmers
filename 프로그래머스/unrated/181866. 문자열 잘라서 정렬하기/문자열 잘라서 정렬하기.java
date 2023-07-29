@@ -6,9 +6,7 @@ class Solution {
         
         int count = 0;
         for (int i = 0; i < str.length; i++) {
-            if (str[i].equals("")) {
-                continue;
-            } else {
+            if (!str[i].equals("")) {
                 count++;
             }
         }
@@ -16,9 +14,7 @@ class Solution {
         String[] answer = new String[count];
         int j = 0;
         for (int i = 0; i < str.length; i++) {
-            if (str[i].equals("")) {
-                continue;
-            } else {
+            if (!str[i].equals("")) {
                 answer[j] = str[i];
                 j++;
             }
