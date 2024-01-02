@@ -14,16 +14,14 @@ public class Solution {
         
         while (true) {
             if (truckCnt == truck_weights.Length) {
-                // 트럭이 다 지나가면 break
                 break;
-            } 
+            }
             
             if (bridge.Count == bridge_length) {
                 curTrucksWeight -= bridge.Dequeue();
             }
             
             if (curTrucksWeight + truck_weights[truckCnt] <= weight) {
-                // 다리가 트럭의 무게를 버티면
                 bridge.Enqueue(truck_weights[truckCnt]);
                 curTrucksWeight += truck_weights[truckCnt];
                 truckCnt++;
