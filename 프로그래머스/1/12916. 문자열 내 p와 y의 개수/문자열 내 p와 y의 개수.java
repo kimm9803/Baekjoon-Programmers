@@ -1,10 +1,10 @@
 class Solution {
     boolean solution(String s) {
-        boolean answer = false;
-        s = s.toLowerCase();
+        boolean answer = true;
         int pCnt = 0;
         int yCnt = 0;
         
+        s = s.toLowerCase();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == 'p') {
                 pCnt++;
@@ -18,6 +18,7 @@ class Solution {
         } else {
             answer = false;
         }
+        
         return answer;
     }
 }
