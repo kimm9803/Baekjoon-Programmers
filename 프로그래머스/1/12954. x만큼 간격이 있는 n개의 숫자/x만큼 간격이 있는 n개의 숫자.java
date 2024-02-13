@@ -3,9 +3,8 @@ class Solution {
         long[] answer = new long[n];
         
         for (int i = 0; i < n; i++) {
-            answer[i] = (i+1) * x;
+            answer[i] = x * (i + 1);
         }
-        
         return answer;
     }
 }
