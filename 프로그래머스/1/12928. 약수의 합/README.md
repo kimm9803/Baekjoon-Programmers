@@ -1,6 +1,6 @@
 # [level 1] 약수의 합 - 12928 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12928?language=csharp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12928) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 6일 11:50:38
+2024년 2월 2일 18:32:20
 
 ### 문제 설명
 
