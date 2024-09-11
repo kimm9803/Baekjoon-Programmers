@@ -1,6 +1,6 @@
 class Solution {
     boolean solution(String s) {
-        boolean answer = true;
+
         int pCnt = 0;
         int yCnt = 0;
         
@@ -13,12 +13,6 @@ class Solution {
             }
         }
         
-        if (pCnt == yCnt) {
-            answer = true;
-        } else {
-            answer = false;
-        }
-        
-        return answer;
+        return (pCnt == yCnt) ? true : false;
     }
 }
