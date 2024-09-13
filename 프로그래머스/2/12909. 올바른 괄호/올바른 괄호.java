@@ -15,7 +15,7 @@ class Solution {
                 stack.pop();
             }
         }
-        
+
         answer = stack.isEmpty();
         
         return answer;
