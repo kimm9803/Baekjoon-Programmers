@@ -3,20 +3,13 @@ import java.util.Collections;
 
 class Solution {
     public long solution(long n) {
-        long answer = 0;
-        
-        String nToStr = String.valueOf(n);
-        String[] arr = nToStr.split("");
-        
-        Arrays.sort(arr, Collections.reverseOrder());
-        
-        String strAnswer = "";
-        for (String s : arr) {
-            strAnswer += s;
+        String[] strArr = String.valueOf(n).split("");
+        Arrays.sort(strArr, Collections.reverseOrder());
+        String str = "";
+        for (int i = 0; i < strArr.length; i++) {
+            str += strArr[i];
         }
-        
-        answer = Long.parseLong(strAnswer);
-        
+        long answer = Long.valueOf(str);
         return answer;
     }
 }
