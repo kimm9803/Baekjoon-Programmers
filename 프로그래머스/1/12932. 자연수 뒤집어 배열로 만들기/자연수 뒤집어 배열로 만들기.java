@@ -1,11 +1,11 @@
 class Solution {
-    public long[] solution(long n) {        
-        String str = String.valueOf(n);
-        long[] answer = new long[str.length()];
-        int j = 0;
+    public int[] solution(long n) {
+        String nToStr = String.valueOf(n);
+        int[] answer = new int[nToStr.length()];
         
-        for (int i = str.length() - 1; i >= 0; i--) {
-            answer[j] = str.charAt(i) - '0';
+        int j = 0;
+        for (int i = nToStr.length() - 1; i >= 0; i--) {
+            answer[j] = Integer.parseInt(Character.toString(nToStr.charAt(i)));
             j++;
         }
         return answer;
