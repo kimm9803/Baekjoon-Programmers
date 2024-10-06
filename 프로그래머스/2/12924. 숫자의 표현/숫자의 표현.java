@@ -1,33 +1,30 @@
 class Solution {
     public int solution(int n) {
         int answer = 0;
+        int i = 1;
         
-        int num = 1;
         while (true) {
-            int rejectNum = n / 2;
-            int temp = num;
             int sum = 0;
+            if (i > n)  break;
             
-            if (num > rejectNum) {
-                break;
-            }
-            
-            // 자연수의 합(sum)이 n과 같거나 n을 넘어가면 종료
-            while (true) {
-                sum += temp;
-                temp++;
-                
-                if (sum == n) {
-                    answer++;
+            for (int j = i; j <= n; j++) {
+                sum += j;
+                if (sum > n) {
                     break;
-                } else if (sum > n) {
+                } else if (sum == n) {
+                    answer++;
                     break;
                 }
             }
-            num++;
+            i++;
         }
-        // n이 1일 때 or n과 같은 경우 포함
-        answer++;
         return answer;
     }
 }
+
+/*
+ *  초기 변수 i = 1
+ *  while문 내의 for문을 이용하여 누적합이 n이 될 시 answer++
+ *  누적합이 n을 초과하면 for문 break 후 i++
+ *  i가 n을 초과하면 while문 break
+*/
