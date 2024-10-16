@@ -1,0 +1,7 @@
+-- 중복 이름 횟수 조회
+-- 이름끼리 GROUP BY하여 COUNT
+-- GROUP BY는 기본적으로 중복을 제거하여 반환함
+SELECT   NAME, COUNT(NAME) AS COUNT
+FROM     ANIMAL_INS
+GROUP BY NAME HAVING COUNT(NAME) >= 2
+ORDER BY NAME;
