@@ -5,7 +5,7 @@ class Solution {
     }
     
     public int remainder(int num1, int num2) {
-        int rem = num1 % num2;
-        return rem;
+        int result = num1 % num2;
+        return result;
     }
 }
